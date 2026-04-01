@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+
+<nav class="menu">
+    <ul>
+        <li><button id="btn_Map">Map</button></li>
+        <li><button id="btn_Mapveterinaria">Map veterinaria</button></li>
+
+        <li class="submenu">
+            <a href="#">Información</a>
+            <ul>
+                <li><a href="#" id="info_distancia">distancia</a></li>
+                <li><a href="#" id="info_costos">costos</a></li>
+                <li><a href="#" id="info_numemergencia">numero emergencia</a></li>
+            </ul>
+        </li>
+
+        <li class="submenu">
+            <a href="#">veterinarias</a>
+            <ul>
+                <li><a href="#" id="est_lista">Lista</a></li>
+            </ul>
+        </li>
+
+        <li class="submenu">
+            <a href="#">Análisis</a>
+            <ul>
+                <li><a href="#" id="analizar">Analizar</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<div id="info-panel" class="info-panel hidden">
+    <button id="close-panel" onclick="document.getElementById('info-panel').classList.add('hidden')">✖</button>
+    <div id="info-content"></div>
+</div>
+<div id="map" style="height:500px;"></div>
+<script src="program.js"></script>
+</body>
+</html>
