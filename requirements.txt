@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]
+shapely
+requests
+aiofiles
